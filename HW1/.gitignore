@@ -1,0 +1,7 @@
+/data/wiki_texts*
+/data/ccnews*
+*.gz
+/models/
+docs/
+*.model
+*.npy
