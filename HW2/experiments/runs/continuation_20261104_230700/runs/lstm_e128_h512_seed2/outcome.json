@@ -1,0 +1,16 @@
+{
+  "pid": 40766,
+  "invocation_id": "independent_post_submission",
+  "stop_reason": "manual interruption during training; completed boundary saved",
+  "best_em": 0.9885,
+  "completed_evaluation_epochs": 28,
+  "convergence": {
+    "converged": false,
+    "meaningful_best": 0.9885,
+    "stagnant_epochs": 2,
+    "low_lr_epochs": 0
+  },
+  "target_em": null,
+  "deadline": null,
+  "finished": "2026-11-04T23:50:38.837293+08:00"
+}

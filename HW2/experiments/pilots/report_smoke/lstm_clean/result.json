@@ -1,0 +1,21 @@
+{
+  "name": "lstm_clean",
+  "cell_type": "LSTM",
+  "train_rows": 128,
+  "eval_rows": 4,
+  "epochs_completed": 1,
+  "embed_dim": 16,
+  "hidden_dim": 24,
+  "batch_size": 128,
+  "seed": 2,
+  "device": "mps",
+  "parameter_count": 10170,
+  "best_exact_match": 0.0,
+  "history": [
+    {
+      "epoch": 1,
+      "exact_match": 0.0
+    }
+  ],
+  "seconds": 0.4736115419946145
+}

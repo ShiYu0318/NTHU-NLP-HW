@@ -1,0 +1,13 @@
+alpha= 0.25 verified= 2000
+alpha= 0.25 verified= 4000
+alpha= 0.25 verified= 6000
+alpha= 0.25 verified= 8000
+alpha= 0.25 verified= 10000
+{"alpha": 0.25, "exact_match": 0.9839, "correct": 9839, "total": 10000}
+alpha= 0.5 verified= 2000
+alpha= 0.5 verified= 4000
+alpha= 0.5 verified= 6000
+alpha= 0.5 verified= 8000
+alpha= 0.5 verified= 10000
+{"alpha": 0.5, "exact_match": 0.9869, "correct": 9869, "total": 10000}
+Candidate comparison complete; primary checkpoint and training unchanged: /Users/shiyu./Code/AI/NTHU-NLP/HW2/experiments/mps_e128_h512_seed2/weight_comparison_20261104_215853

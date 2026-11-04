@@ -1,0 +1,57 @@
+{
+  "name": "rnn_clean",
+  "cell_type": "RNN",
+  "train_rows": 50000,
+  "eval_rows": 1000,
+  "epochs_completed": 10,
+  "embed_dim": 64,
+  "hidden_dim": 64,
+  "batch_size": 128,
+  "seed": 2,
+  "device": "mps",
+  "parameter_count": 23122,
+  "best_exact_match": 0.065,
+  "history": [
+    {
+      "epoch": 1,
+      "exact_match": 0.004
+    },
+    {
+      "epoch": 2,
+      "exact_match": 0.016
+    },
+    {
+      "epoch": 3,
+      "exact_match": 0.015
+    },
+    {
+      "epoch": 4,
+      "exact_match": 0.029
+    },
+    {
+      "epoch": 5,
+      "exact_match": 0.046
+    },
+    {
+      "epoch": 6,
+      "exact_match": 0.03
+    },
+    {
+      "epoch": 7,
+      "exact_match": 0.048
+    },
+    {
+      "epoch": 8,
+      "exact_match": 0.048
+    },
+    {
+      "epoch": 9,
+      "exact_match": 0.055
+    },
+    {
+      "epoch": 10,
+      "exact_match": 0.065
+    }
+  ],
+  "seconds": 60.184913958000834
+}

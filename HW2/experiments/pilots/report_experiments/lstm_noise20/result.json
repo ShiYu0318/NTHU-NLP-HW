@@ -1,0 +1,57 @@
+{
+  "name": "lstm_noise20",
+  "cell_type": "LSTM",
+  "train_rows": 50000,
+  "eval_rows": 1000,
+  "epochs_completed": 10,
+  "embed_dim": 64,
+  "hidden_dim": 64,
+  "batch_size": 128,
+  "seed": 2,
+  "device": "mps",
+  "parameter_count": 73042,
+  "best_exact_match": 0.078,
+  "history": [
+    {
+      "epoch": 1,
+      "exact_match": 0.007
+    },
+    {
+      "epoch": 2,
+      "exact_match": 0.014
+    },
+    {
+      "epoch": 3,
+      "exact_match": 0.02
+    },
+    {
+      "epoch": 4,
+      "exact_match": 0.038
+    },
+    {
+      "epoch": 5,
+      "exact_match": 0.049
+    },
+    {
+      "epoch": 6,
+      "exact_match": 0.041
+    },
+    {
+      "epoch": 7,
+      "exact_match": 0.065
+    },
+    {
+      "epoch": 8,
+      "exact_match": 0.072
+    },
+    {
+      "epoch": 9,
+      "exact_match": 0.064
+    },
+    {
+      "epoch": 10,
+      "exact_match": 0.078
+    }
+  ],
+  "seconds": 135.98016204200394
+}

@@ -1,0 +1,21 @@
+Diagnostic evaluation: 1000/10000
+Diagnostic evaluation: 2000/10000
+Diagnostic evaluation: 3000/10000
+Diagnostic evaluation: 4000/10000
+Diagnostic evaluation: 5000/10000
+Diagnostic evaluation: 6000/10000
+Diagnostic evaluation: 7000/10000
+Diagnostic evaluation: 8000/10000
+Diagnostic evaluation: 9000/10000
+Diagnostic evaluation: 10000/10000
+{
+  "purpose": "Synthetic disjoint diagnostic, not official private test",
+  "checkpoint_sha256": "82a184639072432f028822a8463aacadd7d151770299ea0ad9affb4f114eef05",
+  "evaluation_sha256": "a110c2de203a2b91ef5cb1d161e2f9c1e9b09ce98eba34d0a2ead4c7e727fbb7",
+  "epoch": 5,
+  "official_eval_em": 0.8266,
+  "diagnostic_em": 0.7287,
+  "correct": 7287,
+  "total": 10000,
+  "seconds": 23.340929708996555
+}

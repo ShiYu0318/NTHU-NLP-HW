@@ -1,0 +1,4 @@
+Actual saved storage locations: {'mps': 52}
+Step-counter devices after load: mps {'mps:0'}
+Step-counter devices after load: cpu {'cpu'}
+20 identical tiny-model updates seconds: {'mps': 0.6986231669870904, 'cpu': 0.36675383400870487}

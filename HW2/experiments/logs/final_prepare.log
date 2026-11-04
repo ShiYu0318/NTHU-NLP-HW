@@ -1,0 +1,46 @@
+Independently verified 1000/10000
+Independently verified 2000/10000
+Independently verified 3000/10000
+Independently verified 4000/10000
+Independently verified 5000/10000
+Independently verified 6000/10000
+Independently verified 7000/10000
+Independently verified 8000/10000
+Independently verified 9000/10000
+Independently verified 10000/10000
+{
+  "checkpoint_sha256": "60d869dd1b6aa9a23db649ca994ae43634eec19c08c9da27151dba3adf85f7c9",
+  "exact_match": 0.9874,
+  "correct": 9874,
+  "total": 10000,
+  "device": "CPU independent inference",
+  "recorded_training_em": 0.9874,
+  "answer_order": "normal",
+  "eval_sha256": "73426828a9f18ecd69559c4a0c9cb94e11bb68c49c18e96a9ba5b9a3c220e326",
+  "seconds": 41.49146229100006,
+  "full_evaluation": true,
+  "metadata_weights_match_hash": true,
+  "metadata_em_matches": true
+}
+Diagnostic evaluation: 1000/10000
+Diagnostic evaluation: 2000/10000
+Diagnostic evaluation: 3000/10000
+Diagnostic evaluation: 4000/10000
+Diagnostic evaluation: 5000/10000
+Diagnostic evaluation: 6000/10000
+Diagnostic evaluation: 7000/10000
+Diagnostic evaluation: 8000/10000
+Diagnostic evaluation: 9000/10000
+Diagnostic evaluation: 10000/10000
+{
+  "purpose": "Synthetic disjoint diagnostic, not official private test",
+  "checkpoint_sha256": "60d869dd1b6aa9a23db649ca994ae43634eec19c08c9da27151dba3adf85f7c9",
+  "evaluation_sha256": "a110c2de203a2b91ef5cb1d161e2f9c1e9b09ce98eba34d0a2ead4c7e727fbb7",
+  "epoch": 24,
+  "official_eval_em": 0.9874,
+  "diagnostic_em": 0.9351,
+  "correct": 9351,
+  "total": 10000,
+  "seconds": 43.753757458005566
+}
+Verified three-file submission: /Users/shiyu./Code/AI/NTHU-NLP/HW2/NLP_HW2_NCU_114502540.zip

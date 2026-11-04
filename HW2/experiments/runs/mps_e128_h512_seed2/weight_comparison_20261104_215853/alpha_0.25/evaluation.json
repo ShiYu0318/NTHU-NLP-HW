@@ -1,0 +1,44 @@
+{
+  "alpha": 0.25,
+  "exact_match": 0.9839,
+  "correct": 9839,
+  "total": 10000,
+  "device": "CPU",
+  "provenance": {
+    "base_epoch": 20,
+    "base_recorded_em": 0.9772,
+    "base_sha256": "be9e2ab8b8e0a03efba2074630c49454283a2cc8fcaa2b04944d15ef1665fb41",
+    "recent_epoch": 23,
+    "recent_next_batch": 6000
+  },
+  "config": {
+    "embed_dim": 128,
+    "hidden_dim": 512,
+    "vocab_size": 18,
+    "batch_size": 128,
+    "seed": 2,
+    "optimizer": "Adam",
+    "grad_clip": 1,
+    "char_to_id": {
+      "<pad>": 0,
+      "<eos>": 1,
+      "(": 2,
+      ")": 3,
+      "*": 4,
+      "+": 5,
+      "-": 6,
+      "0": 7,
+      "1": 8,
+      "2": 9,
+      "3": 10,
+      "4": 11,
+      "5": 12,
+      "6": 13,
+      "7": 14,
+      "8": 15,
+      "9": 16,
+      "=": 17
+    }
+  },
+  "checkpoint_sha256": "5bb727610d6e1442375a878c0c9a372fc0488197ae340379c1d61ec66deb12b1"
+}

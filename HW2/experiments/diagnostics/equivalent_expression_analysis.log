@@ -1,0 +1,14 @@
+{
+  "method": "Input-preserving commutativity/associativity only; no numeric evaluation or distributivity",
+  "training_canonical_classes": 339522,
+  "provided_eval": {
+    "known_equivalent_input": 9112,
+    "total": 10000,
+    "fraction": 0.9112
+  },
+  "synthetic_diagnostic": {
+    "known_equivalent_input": 4519,
+    "total": 10000,
+    "fraction": 0.4519
+  }
+}

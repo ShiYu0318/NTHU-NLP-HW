@@ -1,0 +1,8 @@
+{
+  "phase": "artifacts_verified",
+  "supervisor_pid": 85480,
+  "deadline": "2026-11-04T22:30:00+08:00",
+  "updated": "2026-11-04T22:30:22.599084+08:00",
+  "score_stop_disabled_in_continuation": true,
+  "stop_reason": "insufficient time for another epoch before 22:30"
+}

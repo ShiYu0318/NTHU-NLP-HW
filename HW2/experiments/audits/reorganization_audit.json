@@ -1,0 +1,76 @@
+{
+  "original_files_accounted_for": 204,
+  "all_original_bytes_preserved": true,
+  "submitted_files_unchanged": true,
+  "script_count": 14,
+  "modified_files_with_originals": [
+    {
+      "path": "experiments/scripts/generate_holdout.py",
+      "original": "experiments/backups/script_sources_before_reorganization/generate_holdout.py"
+    },
+    {
+      "path": "experiments/scripts/verify_compact_data.py",
+      "original": "experiments/backups/script_sources_before_reorganization/verify_compact_data.py"
+    },
+    {
+      "path": "experiments/scripts/analyze_equivalent_expressions.py",
+      "original": "experiments/backups/script_sources_before_reorganization/analyze_equivalent_expressions.py"
+    },
+    {
+      "path": "experiments/scripts/evaluate_holdout.py",
+      "original": "experiments/backups/script_sources_before_reorganization/evaluate_holdout.py"
+    },
+    {
+      "path": "experiments/scripts/migrate_at_validation.py",
+      "original": "experiments/backups/script_sources_before_reorganization/migrate_at_validation.py"
+    },
+    {
+      "path": "experiments/scripts/compare_weight_interpolation.py",
+      "original": "experiments/backups/script_sources_before_reorganization/compare_weight_interpolation.py"
+    },
+    {
+      "path": "experiments/scripts/run_report_experiments.py",
+      "original": "experiments/backups/script_sources_before_reorganization/run_report_experiments.py"
+    },
+    {
+      "path": "experiments/scripts/train_mps.py",
+      "original": "experiments/backups/script_sources_before_reorganization/train_mps.py"
+    },
+    {
+      "path": "experiments/scripts/continue_until_converged.py",
+      "original": "experiments/backups/script_sources_before_reorganization/continue_until_converged.py"
+    },
+    {
+      "path": "experiments/scripts/prepare_submission.py",
+      "original": "experiments/backups/script_sources_before_reorganization/prepare_submission.py"
+    },
+    {
+      "path": "experiments/scripts/verify_best.py",
+      "original": "experiments/backups/script_sources_before_reorganization/verify_best.py"
+    },
+    {
+      "path": "experiments/scripts/run_continuation.py",
+      "original": "experiments/backups/script_sources_before_reorganization/run_continuation.py"
+    },
+    {
+      "path": "experiments/runs/continuation_20261104_230700/protected_submission_sha256.json",
+      "original": "experiments/runs/continuation_20261104_230700/provenance/protected_submission_sha256.before_resubmission.json"
+    },
+    {
+      "path": "experiments/runs/continuation_20261104_230700/README.md",
+      "original": "experiments/runs/continuation_20261104_230700/provenance/README.before_reorganization.md"
+    }
+  ],
+  "continuation_location": "experiments/runs/continuation_20261104_230700",
+  "training_restarted": false,
+  "path_tests": 7,
+  "zip_unchanged": true,
+  "resume_state_valid": true,
+  "next_epoch": 29,
+  "next_batch": 830,
+  "best_em": 0.9885,
+  "submitted_model_matches_continuation_best": true,
+  "active_training_processes": [],
+  "helper_cli_checks": 8,
+  "checkpoint_inference_smoke_examples": 64
+}

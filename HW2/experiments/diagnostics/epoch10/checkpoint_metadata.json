@@ -1,0 +1,43 @@
+{
+  "config": {
+    "embed_dim": 128,
+    "hidden_dim": 512,
+    "vocab_size": 18,
+    "batch_size": 128,
+    "seed": 2,
+    "optimizer": "Adam",
+    "grad_clip": 1,
+    "char_to_id": {
+      "<pad>": 0,
+      "<eos>": 1,
+      "(": 2,
+      ")": 3,
+      "*": 4,
+      "+": 5,
+      "-": 6,
+      "0": 7,
+      "1": 8,
+      "2": 9,
+      "3": 10,
+      "4": 11,
+      "5": 12,
+      "6": 13,
+      "7": 14,
+      "8": 15,
+      "9": 16,
+      "=": 17
+    }
+  },
+  "epoch": 10,
+  "exact_match": 0.9258,
+  "evaluated_examples": 10000,
+  "evaluation": "Full greedy generation with generator(), no teacher forcing",
+  "python": "3.13.15",
+  "pytorch": "2.15.0",
+  "gpu": "Apple GPU (MPS)",
+  "device_type": "mps",
+  "system": "macOS-26.7.2-arm64-arm-64bit-Mach-O",
+  "timestamp": "2026-11-04T20:17:08.541627+08:00",
+  "binding_verified": false,
+  "checkpoint_sha256": "08013cf3ed285c969a7597a24c0cd26c2a26c1b43a264e1032cfb3cd45714b1f"
+}

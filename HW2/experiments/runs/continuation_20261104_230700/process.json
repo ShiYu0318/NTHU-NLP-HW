@@ -1,0 +1,7 @@
+{
+  "pid": 40766,
+  "started": "2026-11-04T23:07:54.902888+08:00",
+  "status": "finished",
+  "finished": "2026-11-04T23:51:37.622059+08:00",
+  "stop_reason": "manual interruption during training; completed boundary saved"
+}

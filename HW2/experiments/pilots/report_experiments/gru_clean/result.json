@@ -1,0 +1,57 @@
+{
+  "name": "gru_clean",
+  "cell_type": "GRU",
+  "train_rows": 50000,
+  "eval_rows": 1000,
+  "epochs_completed": 10,
+  "embed_dim": 64,
+  "hidden_dim": 64,
+  "batch_size": 128,
+  "seed": 2,
+  "device": "mps",
+  "parameter_count": 56402,
+  "best_exact_match": 0.106,
+  "history": [
+    {
+      "epoch": 1,
+      "exact_match": 0.005
+    },
+    {
+      "epoch": 2,
+      "exact_match": 0.026
+    },
+    {
+      "epoch": 3,
+      "exact_match": 0.023
+    },
+    {
+      "epoch": 4,
+      "exact_match": 0.051
+    },
+    {
+      "epoch": 5,
+      "exact_match": 0.059
+    },
+    {
+      "epoch": 6,
+      "exact_match": 0.076
+    },
+    {
+      "epoch": 7,
+      "exact_match": 0.085
+    },
+    {
+      "epoch": 8,
+      "exact_match": 0.101
+    },
+    {
+      "epoch": 9,
+      "exact_match": 0.102
+    },
+    {
+      "epoch": 10,
+      "exact_match": 0.106
+    }
+  ],
+  "seconds": 106.6831733329891
+}

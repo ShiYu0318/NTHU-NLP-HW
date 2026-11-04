@@ -1,0 +1,8 @@
+{
+  "phase": "terminal",
+  "pid": 67609,
+  "stop_reason": "insufficient time for another epoch before 22:30",
+  "log_offset": 8738080,
+  "finished": "2026-11-04T22:28:51.098114+08:00",
+  "forced_cutoff": false
+}

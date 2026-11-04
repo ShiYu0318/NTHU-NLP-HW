@@ -1,0 +1,21 @@
+{
+  "checkpoint_sha256": "60d869dd1b6aa9a23db649ca994ae43634eec19c08c9da27151dba3adf85f7c9",
+  "exact_match": 0.9874,
+  "correct": 9874,
+  "total": 10000,
+  "device": "CPU independent inference",
+  "recorded_training_em": 0.9874,
+  "answer_order": "normal",
+  "eval_sha256": "73426828a9f18ecd69559c4a0c9cb94e11bb68c49c18e96a9ba5b9a3c220e326",
+  "seconds": 41.49146229100006,
+  "full_evaluation": true,
+  "metadata_weights_match_hash": true,
+  "metadata_em_matches": true,
+  "submission_checkpoint_sha256": "e93ec8d1d04eaf82f24b8ccf16d8d3200b03f1a491347a5ded5ea4f695ab3d6a",
+  "archive_sha256": "c729ab7c23f3518e177c1a7d46188e9072b22ff8c5001241607be3426cb80e93",
+  "tensors_on_cpu": true,
+  "notebook_cells": 21,
+  "code_cells": 13,
+  "markdown_cells": 8,
+  "notebook_sha256": "b4de6df164cf7d87c8d79ba437f408b3c75086bc3eb935ea944c121d18b6547b"
+}
