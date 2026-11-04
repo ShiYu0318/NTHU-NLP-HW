@@ -15,7 +15,7 @@ DIAGNOSTICS = EXPERIMENTS / 'diagnostics'
 LOGS = EXPERIMENTS / 'logs'
 AUDITS = EXPERIMENTS / 'audits'
 DRIVER = TEMPLATES / 'training_driver.json'
-ORIGINAL_NOTEBOOK = TEMPLATES / 'assignment_original.ipynb'
+ORIGINAL_NOTEBOOK = HW2 / 'Assignment2/main.ipynb'
 MAIN_RUN = RUNS / 'mps_e128_h512_seed2'
 CONTINUATION_RUN = RUNS / 'continuation_20261104_230700'
 
