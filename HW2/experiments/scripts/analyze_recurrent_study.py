@@ -103,6 +103,8 @@ def main():
     for kind,r in results.items():table+=f"| {kind.upper()} | {r['parameter_count']:,} | {r['best_epoch']} | {r['last_epoch']} | {r['evaluation']['exact_match']:.2%} | {r['diagnostic']['exact_match']:.2%} |\n"
     performance='| 模型 | MPS update median（ms） | CPU generation median（ms／題） |\n|---|---:|---:|\n'
     for kind,r in measurements['models'].items():performance+=f"| {kind.upper()} | {r.get('mps_update_median_ms',float('nan')):.2f} | {r['cpu_generation_median_ms_per_expression']:.3f} |\n"
+    mode=json.loads((root/'study.json').read_text()).get('lstm_initialization','resume')
+    initialization='GRU 與 LSTM 皆從頭訓練' if mode=='fresh' else 'GRU 從頭訓練，LSTM 從完整狀態的隔離副本接續'
     report=f'''# GRU 與 LSTM 收斂實驗
 
 ## 摘要
@@ -111,7 +113,7 @@ def main():
 
 ## 實作方法
 
-兩層 recurrent network、Embedding 128、hidden size 512、batch size 128、seed 2。沿用相同原始資料、teacher forcing、Adam、gradient clipping、scheduler 與 greedy generation。GRU 從頭訓練，LSTM 從完整狀態的隔離副本接續；以完整 Eval EM 選模，再獨立載入最佳權重驗證 Eval 與合成診斷集。沒有時間、分數或 epoch 上限。
+兩層 recurrent network、Embedding 128、hidden size 512、batch size 128、seed 2。沿用相同原始資料、teacher forcing、Adam、gradient clipping、scheduler 與 greedy generation。{initialization}；以完整 Eval EM 選模，再獨立載入最佳權重驗證 Eval 與合成診斷集。沒有時間、分數或 epoch 上限。
 
 收斂判準為 12 輪未提升超過 0.01 個百分點，且包含至少 6 輪以 lr≤1e-5 完成訓練。原始 LSTM 實驗狀態與繳交權重均未覆寫。大型實驗權重留在本機，PR 收錄可重現程式、逐輪紀錄與完整預測。
 

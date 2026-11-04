@@ -76,6 +76,23 @@ class RecurrentStudyTests(unittest.TestCase):
             self.assertFalse(publishing.publication_plan(root)['publishable'])
             self.assertFalse((root/'publication.json').exists())
 
+    def test_fresh_study_needs_no_private_lstm_resume(self):
+        self.helper()
+        import run_recurrent_study as study
+        with tempfile.TemporaryDirectory() as temp:
+            hw=Path(temp)/'HW2';root=hw/'experiments/runs/fresh'
+            for name in ['NLP_HW2_NCU_114502540.ipynb','NLP_HW2_NCU_114502540.zip','checkpoint.pt','requirements.txt',
+                         'Assignment2/main.ipynb','data/arithmetic_train.csv','data/arithmetic_eval.csv']:
+                p=hw/name;p.parent.mkdir(parents=True,exist_ok=True);p.write_text('fixture')
+            study.prepare(root,lstm_start='fresh')
+            metadata=json.loads((root/'study.json').read_text())
+            self.assertEqual(metadata['lstm_initialization'],'fresh')
+            self.assertEqual(metadata['lstm_start_epoch'],1)
+            self.assertFalse((root/'lstm/state/resume.pt').exists())
+            study.prepare(root)
+            with self.assertRaises(ValueError):study.prepare(root,lstm_start='resume')
+            self.assertEqual((hw/'checkpoint.pt').read_text(),'fixture')
+
     def test_adam_resume_preserves_next_parameter_update(self):
         model,c=self.model('GRU');model2=copy.deepcopy(model)
         def step(m,opt):

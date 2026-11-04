@@ -4,6 +4,7 @@ import hashlib
 import json
 from pathlib import Path
 import shutil
+import shlex
 import subprocess
 import sys
 
@@ -68,7 +69,9 @@ def main():
     existing=subprocess.run(['git','rev-parse','--verify','refs/heads/'+branch],cwd=WORKSPACE,capture_output=True,text=True)
     if existing.returncode==0:assert existing.stdout.strip()==head,'Existing feature branch differs; refusing to overwrite.'
     else:git('branch',branch,head)
-    git('-c','credential.helper=','-c','credential.helper=!/opt/homebrew/bin/gh auth git-credential','push','-u','origin',branch)
+    gh=shutil.which('gh')
+    if gh is None:raise FileNotFoundError('GitHub CLI is required to publish the authorized draft.')
+    git('-c','credential.helper=','-c','credential.helper=!'+shlex.quote(gh)+' auth git-credential','push','-u','origin',branch)
     found=json.loads(run('gh','pr','list','--repo',REPOSITORY,'--head',branch,'--state','all','--json','url,state,isDraft'))
     if found:
         url=found[0]['url']
