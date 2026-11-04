@@ -8,7 +8,7 @@
 
 完整設定為兩層、Embedding 128、hidden 512、batch 128、seed 2；使用相同 teacher forcing、Adam、gradient clipping、ReduceLROnPlateau 與完整答案生成 EM。固定維度不等於固定參數量。
 
-目前的本機實驗先訓練 GRU，再從舊 LSTM 的完整狀態副本接續至相同收斂判準。其他機器若沒有本機 optimizer 備份，可以讓兩個模型皆從頭訓練：
+目前的本機實驗先訓練 GRU，再從舊 LSTM 的完整狀態副本接續至相同收斂判準。其他支援 MPS 的 Mac 若沒有本機 optimizer 備份，可以讓兩個模型皆從頭訓練：
 
 ```bash
 python HW2/experiments/scripts/run_recurrent_study.py \

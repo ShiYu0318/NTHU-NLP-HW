@@ -34,6 +34,17 @@ def evaluate(model, frame, output):
     return dict(correct=correct,total=len(frame),exact_match=correct/len(frame),seconds=time.monotonic()-started,groups=groups)
 
 
+def require_resume_state(root, cell_type):
+    root=Path(root)
+    metadata=root.parent/'study.json'
+    resume_mode=False
+    if cell_type=='LSTM' and metadata.exists():
+        resume_mode=json.loads(metadata.read_text()).get('lstm_initialization','resume')=='resume'
+    started=(root/'experiment.json').exists() or (root/'checkpoint.pt').exists() or resume_mode
+    if started and not (root/'state/resume.pt').is_file():
+        raise RuntimeError('Complete optimizer/scheduler resume state is missing; refusing to reinitialize.')
+
+
 def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--cell-type',required=True,choices=['GRU','LSTM'])
@@ -50,6 +61,7 @@ def main():
     frozen=root.parent/'frozen_submission.json'
     if not frozen.is_file():raise FileNotFoundError('Prepare the study frozen-submission manifest before training.')
     verify_study(root.parent)
+    require_resume_state(root,args.cell_type)
     driver=make_driver(args.cell_type,smoke_epochs=2 if args.smoke else None)
     source=json.dumps(driver,ensure_ascii=False,indent=1)+'\n'
     snapshot=root/'source_notebook.ipynb'

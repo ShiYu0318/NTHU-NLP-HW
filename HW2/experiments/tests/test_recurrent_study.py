@@ -43,7 +43,7 @@ class RecurrentStudyTests(unittest.TestCase):
                 if token==mapping['<eos>']:break
                 tokens.append(token)
         expected=[reverse[i] for i in tokens]
-        self.assertEqual(model.generator(prompt,max_len=limit),expected)
+        self.assertEqual(''.join(model.generator(prompt,max_len=limit)),''.join(expected))
 
     def test_comparison_counts_aligned_model_errors(self):
         import pandas as pd
@@ -92,6 +92,21 @@ class RecurrentStudyTests(unittest.TestCase):
             study.prepare(root)
             with self.assertRaises(ValueError):study.prepare(root,lstm_start='resume')
             self.assertEqual((hw/'checkpoint.pt').read_text(),'fixture')
+
+    def test_missing_resume_cannot_silently_reset_optimizer(self):
+        self.helper()
+        import train_recurrent as training
+        self.assertTrue(hasattr(training,'require_resume_state'),'Resume-loss guard is missing')
+        with tempfile.TemporaryDirectory() as temp:
+            root=Path(temp)/'gru';root.mkdir()
+            training.require_resume_state(root,'GRU')
+            (root/'experiment.json').write_text('{}')
+            with self.assertRaises(RuntimeError):training.require_resume_state(root,'GRU')
+            (root/'state').mkdir();(root/'state/resume.pt').write_bytes(b'fixture')
+            training.require_resume_state(root,'GRU')
+            lstm=Path(temp)/'lstm';lstm.mkdir()
+            (lstm.parent/'study.json').write_text(json.dumps({'lstm_initialization':'resume'}))
+            with self.assertRaises(RuntimeError):training.require_resume_state(lstm,'LSTM')
 
     def test_adam_resume_preserves_next_parameter_update(self):
         model,c=self.model('GRU');model2=copy.deepcopy(model)
