@@ -1,0 +1,32 @@
+Data: /Users/shiyu./Code/AI/NTHU-NLP/HW2/data | Artifacts: /private/tmp/hw2_compact_audit
+Python: 3.13.15 | PyTorch: 2.15.0
+CUDA available: False
+Vocab size18
+Compact token storage MiB: 34.332275390625
+{
+  "examples": 1000000,
+  "all_token_labels_identical": true,
+  "token_label_sha256": "2d01c4e388b22146c7c1f19333bc3ef354d0395e01179b73e38a496cfb514d5c",
+  "preprocessing_sha256": "97f02572bc5005d15254b1c2c0b02f2282ef9ab171bfe7583b26f44ec5fad63c",
+  "storage_bytes": 36000000,
+  "vocabulary": {
+    "<pad>": 0,
+    "<eos>": 1,
+    "(": 2,
+    ")": 3,
+    "*": 4,
+    "+": 5,
+    "-": 6,
+    "0": 7,
+    "1": 8,
+    "2": 9,
+    "3": 10,
+    "4": 11,
+    "5": 12,
+    "6": 13,
+    "7": 14,
+    "8": 15,
+    "9": 16,
+    "=": 17
+  }
+}

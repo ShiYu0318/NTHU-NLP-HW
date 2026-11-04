@@ -1,0 +1,16 @@
+{
+  "pid": 67609,
+  "invocation_id": "source_notebook_20261104_221458.ipynb",
+  "stop_reason": "insufficient time for another epoch before 22:30",
+  "best_em": 0.9874,
+  "completed_evaluation_epochs": 25,
+  "convergence": {
+    "converged": false,
+    "meaningful_best": 0.9864,
+    "stagnant_epochs": 2,
+    "low_lr_epochs": 0
+  },
+  "target_em": null,
+  "deadline": "2026-11-04T22:30:00+08:00",
+  "finished": "2026-11-04T22:28:29.476775+08:00"
+}

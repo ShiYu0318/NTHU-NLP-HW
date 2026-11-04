@@ -1,0 +1,15 @@
+{
+  "phase": "migration_launched",
+  "previous_pid": 4527,
+  "trainer_pid": 67609,
+  "supervisor_pid": 67611,
+  "observer_pid": 67610,
+  "resume_epoch": 24,
+  "resume_batch": 7813,
+  "optimizer_steps_restored": 187512.0,
+  "learning_rates": [
+    0.00025
+  ],
+  "input_label_equivalence_sha256": "2d01c4e388b22146c7c1f19333bc3ef354d0395e01179b73e38a496cfb514d5c",
+  "log_offset": 8738080
+}

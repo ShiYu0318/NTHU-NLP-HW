@@ -1,0 +1,550 @@
+{
+  "groups": {
+    "answer_length_2": {
+      "correct": 3385,
+      "total": 3398
+    },
+    "addition_subtraction": {
+      "correct": 4172,
+      "total": 4178
+    },
+    "no_parentheses": {
+      "correct": 4128,
+      "total": 4294
+    },
+    "nonnegative_answer": {
+      "correct": 7112,
+      "total": 7319
+    },
+    "answer_length_3": {
+      "correct": 3767,
+      "total": 3807
+    },
+    "negative_answer": {
+      "correct": 2660,
+      "total": 2681
+    },
+    "answer_length_5": {
+      "correct": 289,
+      "total": 366
+    },
+    "multiplication": {
+      "correct": 5600,
+      "total": 5822
+    },
+    "parentheses": {
+      "correct": 5644,
+      "total": 5706
+    },
+    "answer_length_4": {
+      "correct": 1864,
+      "total": 1956
+    },
+    "answer_length_1": {
+      "correct": 467,
+      "total": 473
+    }
+  },
+  "examples": [
+    {
+      "src": "31+1*33=",
+      "target": "64",
+      "prediction": "62"
+    },
+    {
+      "src": "32*(8+15)=",
+      "target": "736",
+      "prediction": "672"
+    },
+    {
+      "src": "44-17-43=",
+      "target": "-16",
+      "prediction": "-18"
+    },
+    {
+      "src": "39*27*21=",
+      "target": "22113",
+      "prediction": "21973"
+    },
+    {
+      "src": "43*40*47=",
+      "target": "80840",
+      "prediction": "82680"
+    },
+    {
+      "src": "43*39*19=",
+      "target": "31863",
+      "prediction": "31663"
+    },
+    {
+      "src": "47*14*41=",
+      "target": "26978",
+      "prediction": "26562"
+    },
+    {
+      "src": "11*46*33=",
+      "target": "16698",
+      "prediction": "16358"
+    },
+    {
+      "src": "23*21*33=",
+      "target": "15939",
+      "prediction": "16239"
+    },
+    {
+      "src": "39*43*5=",
+      "target": "8385",
+      "prediction": "8595"
+    },
+    {
+      "src": "(46*48)-7=",
+      "target": "2201",
+      "prediction": "2191"
+    },
+    {
+      "src": "23*39*13=",
+      "target": "11661",
+      "prediction": "11681"
+    },
+    {
+      "src": "48*23*31=",
+      "target": "34224",
+      "prediction": "34840"
+    },
+    {
+      "src": "9*29+10=",
+      "target": "271",
+      "prediction": "261"
+    },
+    {
+      "src": "4*31*47=",
+      "target": "5828",
+      "prediction": "5792"
+    },
+    {
+      "src": "45-30*13=",
+      "target": "-345",
+      "prediction": "-355"
+    },
+    {
+      "src": "32*31*43=",
+      "target": "42656",
+      "prediction": "42336"
+    },
+    {
+      "src": "6*21*8=",
+      "target": "1008",
+      "prediction": "928"
+    },
+    {
+      "src": "19*3*29=",
+      "target": "1653",
+      "prediction": "1599"
+    },
+    {
+      "src": "32*(1+37)=",
+      "target": "1216",
+      "prediction": "1280"
+    },
+    {
+      "src": "49*36*24=",
+      "target": "42336",
+      "prediction": "42464"
+    },
+    {
+      "src": "29*31*37=",
+      "target": "33263",
+      "prediction": "33467"
+    },
+    {
+      "src": "17*39*23=",
+      "target": "15249",
+      "prediction": "15181"
+    },
+    {
+      "src": "8*(27+37)=",
+      "target": "512",
+      "prediction": "496"
+    },
+    {
+      "src": "25-22*28=",
+      "target": "-591",
+      "prediction": "-581"
+    },
+    {
+      "src": "27-(40*28)=",
+      "target": "-1093",
+      "prediction": "-1083"
+    },
+    {
+      "src": "32*34*43=",
+      "target": "46784",
+      "prediction": "46464"
+    },
+    {
+      "src": "19*31*15=",
+      "target": "8835",
+      "prediction": "8825"
+    },
+    {
+      "src": "11*(11-48)=",
+      "target": "-407",
+      "prediction": "-385"
+    },
+    {
+      "src": "24*17*21=",
+      "target": "8568",
+      "prediction": "8712"
+    },
+    {
+      "src": "8*41*39=",
+      "target": "12792",
+      "prediction": "12312"
+    },
+    {
+      "src": "19*25*37=",
+      "target": "17575",
+      "prediction": "17225"
+    },
+    {
+      "src": "35*11*15=",
+      "target": "5775",
+      "prediction": "5825"
+    },
+    {
+      "src": "27*24*24=",
+      "target": "15552",
+      "prediction": "15488"
+    },
+    {
+      "src": "48*13*47=",
+      "target": "29328",
+      "prediction": "28896"
+    },
+    {
+      "src": "(48+24)*18=",
+      "target": "1296",
+      "prediction": "1332"
+    },
+    {
+      "src": "9*(43-2)=",
+      "target": "369",
+      "prediction": "351"
+    },
+    {
+      "src": "2*43*43=",
+      "target": "3698",
+      "prediction": "3762"
+    },
+    {
+      "src": "15*30*39=",
+      "target": "17550",
+      "prediction": "17950"
+    },
+    {
+      "src": "(34*27)+43=",
+      "target": "961",
+      "prediction": "951"
+    },
+    {
+      "src": "44-3*11=",
+      "target": "11",
+      "prediction": "9"
+    },
+    {
+      "src": "18+(20*10)=",
+      "target": "218",
+      "prediction": "228"
+    },
+    {
+      "src": "49*13*47=",
+      "target": "29939",
+      "prediction": "29171"
+    },
+    {
+      "src": "47-4+9=",
+      "target": "52",
+      "prediction": "50"
+    },
+    {
+      "src": "15*(5+46)=",
+      "target": "765",
+      "prediction": "795"
+    },
+    {
+      "src": "35+31*41=",
+      "target": "1306",
+      "prediction": "1316"
+    },
+    {
+      "src": "32*28*40=",
+      "target": "35840",
+      "prediction": "35600"
+    },
+    {
+      "src": "25*17*45=",
+      "target": "19125",
+      "prediction": "18925"
+    },
+    {
+      "src": "17*43*41=",
+      "target": "29971",
+      "prediction": "29159"
+    },
+    {
+      "src": "7+13*37=",
+      "target": "488",
+      "prediction": "498"
+    },
+    {
+      "src": "29*24*3=",
+      "target": "2088",
+      "prediction": "2128"
+    },
+    {
+      "src": "27*48*4=",
+      "target": "5184",
+      "prediction": "5264"
+    },
+    {
+      "src": "4*11*44=",
+      "target": "1936",
+      "prediction": "1848"
+    },
+    {
+      "src": "5*47*15=",
+      "target": "3525",
+      "prediction": "3425"
+    },
+    {
+      "src": "47*31*29=",
+      "target": "42253",
+      "prediction": "41153"
+    },
+    {
+      "src": "(9+43)*29=",
+      "target": "1508",
+      "prediction": "1482"
+    },
+    {
+      "src": "9*(47+18)=",
+      "target": "585",
+      "prediction": "567"
+    },
+    {
+      "src": "45*15*13=",
+      "target": "8775",
+      "prediction": "8825"
+    },
+    {
+      "src": "12*26*19=",
+      "target": "5928",
+      "prediction": "5852"
+    },
+    {
+      "src": "(19*3)-49=",
+      "target": "8",
+      "prediction": "6"
+    },
+    {
+      "src": "7*(8-4)=",
+      "target": "28",
+      "prediction": "42"
+    },
+    {
+      "src": "14*22*29=",
+      "target": "8932",
+      "prediction": "9192"
+    },
+    {
+      "src": "10*17*21=",
+      "target": "3570",
+      "prediction": "3460"
+    },
+    {
+      "src": "25+(42*23)=",
+      "target": "991",
+      "prediction": "981"
+    },
+    {
+      "src": "38*(41+17)=",
+      "target": "2204",
+      "prediction": "2184"
+    },
+    {
+      "src": "25*11*13=",
+      "target": "3575",
+      "prediction": "3525"
+    },
+    {
+      "src": "46*37*43=",
+      "target": "73186",
+      "prediction": "73146"
+    },
+    {
+      "src": "18*(43-15)=",
+      "target": "504",
+      "prediction": "512"
+    },
+    {
+      "src": "49*42*9=",
+      "target": "18522",
+      "prediction": "18982"
+    },
+    {
+      "src": "21*6*19=",
+      "target": "2394",
+      "prediction": "2414"
+    },
+    {
+      "src": "38*20*36=",
+      "target": "27360",
+      "prediction": "27640"
+    },
+    {
+      "src": "23*3*48=",
+      "target": "3312",
+      "prediction": "3264"
+    },
+    {
+      "src": "4-7*0=",
+      "target": "4",
+      "prediction": "0"
+    },
+    {
+      "src": "(47*33)-23=",
+      "target": "1528",
+      "prediction": "1538"
+    },
+    {
+      "src": "44*47*3=",
+      "target": "6204",
+      "prediction": "6124"
+    },
+    {
+      "src": "47+45*43=",
+      "target": "1982",
+      "prediction": "1972"
+    },
+    {
+      "src": "23*46*47=",
+      "target": "49726",
+      "prediction": "49126"
+    },
+    {
+      "src": "(25*26)-37=",
+      "target": "613",
+      "prediction": "623"
+    },
+    {
+      "src": "21*42*6=",
+      "target": "5292",
+      "prediction": "5332"
+    },
+    {
+      "src": "33*(41+22)=",
+      "target": "2079",
+      "prediction": "2043"
+    },
+    {
+      "src": "43*(26+49)=",
+      "target": "3225",
+      "prediction": "3139"
+    },
+    {
+      "src": "12*33*18=",
+      "target": "7128",
+      "prediction": "7228"
+    },
+    {
+      "src": "37*(35+43)=",
+      "target": "2886",
+      "prediction": "2812"
+    },
+    {
+      "src": "25*41*37=",
+      "target": "37925",
+      "prediction": "38225"
+    },
+    {
+      "src": "3*8*13=",
+      "target": "312",
+      "prediction": "296"
+    },
+    {
+      "src": "29*38+4=",
+      "target": "1106",
+      "prediction": "1090"
+    },
+    {
+      "src": "24*49*48=",
+      "target": "56448",
+      "prediction": "55248"
+    },
+    {
+      "src": "42*(36+38)=",
+      "target": "3108",
+      "prediction": "3120"
+    },
+    {
+      "src": "38+27*35=",
+      "target": "983",
+      "prediction": "973"
+    },
+    {
+      "src": "37*26*37=",
+      "target": "35594",
+      "prediction": "35434"
+    },
+    {
+      "src": "48*23*23=",
+      "target": "25392",
+      "prediction": "25872"
+    },
+    {
+      "src": "35*39*47=",
+      "target": "64155",
+      "prediction": "63455"
+    },
+    {
+      "src": "29*8*2=",
+      "target": "464",
+      "prediction": "456"
+    },
+    {
+      "src": "28*7*9=",
+      "target": "1764",
+      "prediction": "1824"
+    },
+    {
+      "src": "(13-45)*38=",
+      "target": "-1216",
+      "prediction": "-1176"
+    },
+    {
+      "src": "36*42*33=",
+      "target": "49896",
+      "prediction": "49376"
+    },
+    {
+      "src": "48*8*33=",
+      "target": "12672",
+      "prediction": "12768"
+    },
+    {
+      "src": "23*6*43=",
+      "target": "5934",
+      "prediction": "5746"
+    },
+    {
+      "src": "3*5-46=",
+      "target": "-31",
+      "prediction": "-29"
+    },
+    {
+      "src": "15*4*9=",
+      "target": "540",
+      "prediction": "510"
+    }
+  ]
+}

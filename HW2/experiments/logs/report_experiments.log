@@ -1,0 +1,355 @@
+rnn_clean: epoch=1, full pilot EM=0.0040
+rnn_clean: epoch=2, full pilot EM=0.0160
+rnn_clean: epoch=3, full pilot EM=0.0150
+rnn_clean: epoch=4, full pilot EM=0.0290
+rnn_clean: epoch=5, full pilot EM=0.0460
+rnn_clean: epoch=6, full pilot EM=0.0300
+rnn_clean: epoch=7, full pilot EM=0.0480
+rnn_clean: epoch=8, full pilot EM=0.0480
+rnn_clean: epoch=9, full pilot EM=0.0550
+rnn_clean: epoch=10, full pilot EM=0.0650
+lstm_clean: epoch=1, full pilot EM=0.0060
+lstm_clean: epoch=2, full pilot EM=0.0120
+lstm_clean: epoch=3, full pilot EM=0.0180
+lstm_clean: epoch=4, full pilot EM=0.0240
+lstm_clean: epoch=5, full pilot EM=0.0380
+lstm_clean: epoch=6, full pilot EM=0.0410
+lstm_clean: epoch=7, full pilot EM=0.0670
+lstm_clean: epoch=8, full pilot EM=0.0770
+lstm_clean: epoch=9, full pilot EM=0.0900
+lstm_clean: epoch=10, full pilot EM=0.0880
+gru_clean: epoch=1, full pilot EM=0.0050
+gru_clean: epoch=2, full pilot EM=0.0260
+gru_clean: epoch=3, full pilot EM=0.0230
+gru_clean: epoch=4, full pilot EM=0.0510
+gru_clean: epoch=5, full pilot EM=0.0590
+gru_clean: epoch=6, full pilot EM=0.0760
+gru_clean: epoch=7, full pilot EM=0.0850
+gru_clean: epoch=8, full pilot EM=0.1010
+gru_clean: epoch=9, full pilot EM=0.1020
+gru_clean: epoch=10, full pilot EM=0.1060
+lstm_noise20: epoch=1, full pilot EM=0.0070
+lstm_noise20: epoch=2, full pilot EM=0.0140
+lstm_noise20: epoch=3, full pilot EM=0.0200
+lstm_noise20: epoch=4, full pilot EM=0.0380
+lstm_noise20: epoch=5, full pilot EM=0.0490
+lstm_noise20: epoch=6, full pilot EM=0.0410
+lstm_noise20: epoch=7, full pilot EM=0.0650
+lstm_noise20: epoch=8, full pilot EM=0.0720
+lstm_noise20: epoch=9, full pilot EM=0.0640
+lstm_noise20: epoch=10, full pilot EM=0.0780
+lstm_train2_test2: epoch=1, full pilot EM=0.0010
+lstm_train2_test2: epoch=2, full pilot EM=0.0040
+lstm_train2_test2: epoch=3, full pilot EM=0.0050
+lstm_train2_test2: epoch=4, full pilot EM=0.0090
+lstm_train2_test2: epoch=5, full pilot EM=0.0100
+lstm_train2_test2: epoch=6, full pilot EM=0.0150
+lstm_train2_test2: epoch=7, full pilot EM=0.0150
+lstm_train2_test2: epoch=8, full pilot EM=0.0220
+lstm_train2_test2: epoch=9, full pilot EM=0.0270
+lstm_train2_test2: epoch=10, full pilot EM=0.0270
+{
+  "purpose": "Controlled small-capacity report pilots; not leaderboard training",
+  "started": "2026-11-04T20:37:08.795417+08:00",
+  "complete": false,
+  "runs": [
+    {
+      "name": "rnn_clean",
+      "cell_type": "RNN",
+      "train_rows": 50000,
+      "eval_rows": 1000,
+      "epochs_completed": 10,
+      "embed_dim": 64,
+      "hidden_dim": 64,
+      "batch_size": 128,
+      "seed": 2,
+      "device": "mps",
+      "parameter_count": 23122,
+      "best_exact_match": 0.065,
+      "history": [
+        {
+          "epoch": 1,
+          "exact_match": 0.004
+        },
+        {
+          "epoch": 2,
+          "exact_match": 0.016
+        },
+        {
+          "epoch": 3,
+          "exact_match": 0.015
+        },
+        {
+          "epoch": 4,
+          "exact_match": 0.029
+        },
+        {
+          "epoch": 5,
+          "exact_match": 0.046
+        },
+        {
+          "epoch": 6,
+          "exact_match": 0.03
+        },
+        {
+          "epoch": 7,
+          "exact_match": 0.048
+        },
+        {
+          "epoch": 8,
+          "exact_match": 0.048
+        },
+        {
+          "epoch": 9,
+          "exact_match": 0.055
+        },
+        {
+          "epoch": 10,
+          "exact_match": 0.065
+        }
+      ],
+      "seconds": 60.184913958000834
+    },
+    {
+      "name": "lstm_clean",
+      "cell_type": "LSTM",
+      "train_rows": 50000,
+      "eval_rows": 1000,
+      "epochs_completed": 10,
+      "embed_dim": 64,
+      "hidden_dim": 64,
+      "batch_size": 128,
+      "seed": 2,
+      "device": "mps",
+      "parameter_count": 73042,
+      "best_exact_match": 0.09,
+      "history": [
+        {
+          "epoch": 1,
+          "exact_match": 0.006
+        },
+        {
+          "epoch": 2,
+          "exact_match": 0.012
+        },
+        {
+          "epoch": 3,
+          "exact_match": 0.018
+        },
+        {
+          "epoch": 4,
+          "exact_match": 0.024
+        },
+        {
+          "epoch": 5,
+          "exact_match": 0.038
+        },
+        {
+          "epoch": 6,
+          "exact_match": 0.041
+        },
+        {
+          "epoch": 7,
+          "exact_match": 0.067
+        },
+        {
+          "epoch": 8,
+          "exact_match": 0.077
+        },
+        {
+          "epoch": 9,
+          "exact_match": 0.09
+        },
+        {
+          "epoch": 10,
+          "exact_match": 0.088
+        }
+      ],
+      "seconds": 85.99028616600845
+    },
+    {
+      "name": "gru_clean",
+      "cell_type": "GRU",
+      "train_rows": 50000,
+      "eval_rows": 1000,
+      "epochs_completed": 10,
+      "embed_dim": 64,
+      "hidden_dim": 64,
+      "batch_size": 128,
+      "seed": 2,
+      "device": "mps",
+      "parameter_count": 56402,
+      "best_exact_match": 0.106,
+      "history": [
+        {
+          "epoch": 1,
+          "exact_match": 0.005
+        },
+        {
+          "epoch": 2,
+          "exact_match": 0.026
+        },
+        {
+          "epoch": 3,
+          "exact_match": 0.023
+        },
+        {
+          "epoch": 4,
+          "exact_match": 0.051
+        },
+        {
+          "epoch": 5,
+          "exact_match": 0.059
+        },
+        {
+          "epoch": 6,
+          "exact_match": 0.076
+        },
+        {
+          "epoch": 7,
+          "exact_match": 0.085
+        },
+        {
+          "epoch": 8,
+          "exact_match": 0.101
+        },
+        {
+          "epoch": 9,
+          "exact_match": 0.102
+        },
+        {
+          "epoch": 10,
+          "exact_match": 0.106
+        }
+      ],
+      "seconds": 106.6831733329891
+    },
+    {
+      "name": "lstm_noise20",
+      "cell_type": "LSTM",
+      "train_rows": 50000,
+      "eval_rows": 1000,
+      "epochs_completed": 10,
+      "embed_dim": 64,
+      "hidden_dim": 64,
+      "batch_size": 128,
+      "seed": 2,
+      "device": "mps",
+      "parameter_count": 73042,
+      "best_exact_match": 0.078,
+      "history": [
+        {
+          "epoch": 1,
+          "exact_match": 0.007
+        },
+        {
+          "epoch": 2,
+          "exact_match": 0.014
+        },
+        {
+          "epoch": 3,
+          "exact_match": 0.02
+        },
+        {
+          "epoch": 4,
+          "exact_match": 0.038
+        },
+        {
+          "epoch": 5,
+          "exact_match": 0.049
+        },
+        {
+          "epoch": 6,
+          "exact_match": 0.041
+        },
+        {
+          "epoch": 7,
+          "exact_match": 0.065
+        },
+        {
+          "epoch": 8,
+          "exact_match": 0.072
+        },
+        {
+          "epoch": 9,
+          "exact_match": 0.064
+        },
+        {
+          "epoch": 10,
+          "exact_match": 0.078
+        }
+      ],
+      "seconds": 135.98016204200394
+    },
+    {
+      "name": "lstm_train2_test2",
+      "cell_type": "LSTM",
+      "train_rows": 50000,
+      "eval_rows": 1000,
+      "epochs_completed": 10,
+      "embed_dim": 64,
+      "hidden_dim": 64,
+      "batch_size": 128,
+      "seed": 2,
+      "device": "mps",
+      "parameter_count": 73042,
+      "best_exact_match": 0.027,
+      "history": [
+        {
+          "epoch": 1,
+          "exact_match": 0.001
+        },
+        {
+          "epoch": 2,
+          "exact_match": 0.004
+        },
+        {
+          "epoch": 3,
+          "exact_match": 0.005
+        },
+        {
+          "epoch": 4,
+          "exact_match": 0.009
+        },
+        {
+          "epoch": 5,
+          "exact_match": 0.01
+        },
+        {
+          "epoch": 6,
+          "exact_match": 0.015
+        },
+        {
+          "epoch": 7,
+          "exact_match": 0.015
+        },
+        {
+          "epoch": 8,
+          "exact_match": 0.022
+        },
+        {
+          "epoch": 9,
+          "exact_match": 0.027
+        },
+        {
+          "epoch": 10,
+          "exact_match": 0.027
+        }
+      ],
+      "seconds": 166.10552437500155
+    }
+  ],
+  "noise_rows": 10000,
+  "finished": "2026-11-04T20:46:36.044080+08:00"
+}
+Traceback (most recent call last):
+  File "/Users/shiyu./Code/AI/NTHU-NLP/HW2/experiments/run_report_experiments.py", line 180, in <module>
+    main()
+    ~~~~^^
+  File "/Users/shiyu./Code/AI/NTHU-NLP/HW2/experiments/run_report_experiments.py", line 169, in main
+    results['runs'].append(fit('lstm_train3_test2', 'LSTM', three_train, two_eval, config, output))
+                           ~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/shiyu./Code/AI/NTHU-NLP/HW2/experiments/run_report_experiments.py", line 98, in fit
+    logits = model(xs.to(config['device']), lengths)
+                   ~~~~~^^^^^^^^^^^^^^^^^^
+KeyboardInterrupt

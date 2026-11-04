@@ -1,0 +1,18 @@
+{
+  "cells": 21,
+  "code_cells": 13,
+  "code_ast_unchanged": true,
+  "english_contains_chinese": false,
+  "excluded_topics_absent": true,
+  "archive_members": [
+    "NLP_HW2_NCU_114502540.ipynb",
+    "checkpoint.pt",
+    "requirements.txt"
+  ],
+  "sha256": {
+    "NLP_HW2_NCU_114502540.ipynb": "30a71637f7da455836f7be9b08220824107c4371b16242ebec3a467ee88f914e",
+    "checkpoint.pt": "e93ec8d1d04eaf82f24b8ccf16d8d3200b03f1a491347a5ded5ea4f695ab3d6a",
+    "NLP_HW2_NCU_114502540.zip": "bc0f97081848362518b70a0aafbbb0016f63af42498e579eec1a4a09e3221e6f"
+  },
+  "chinese_copy": "NLP_HW2_NCU_114502540_中文版.ipynb"
+}

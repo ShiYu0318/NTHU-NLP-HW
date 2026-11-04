@@ -1,0 +1,241 @@
+[
+  {
+    "epoch": 1,
+    "exact_match": 0.5275,
+    "train_answer_token_loss": 0.6068535885730418,
+    "learning_rate": 0.001,
+    "seconds": 327.0058437909902,
+    "evaluated_examples": 10000,
+    "trained_batches_this_invocation": 7813
+  },
+  {
+    "epoch": 2,
+    "exact_match": 0.6428,
+    "train_answer_token_loss": 0.32464413134328374,
+    "learning_rate": 0.001,
+    "seconds": 297.0996291249903,
+    "evaluated_examples": 10000,
+    "trained_batches_this_invocation": 7813
+  },
+  {
+    "epoch": 3,
+    "exact_match": 0.7269,
+    "train_answer_token_loss": 0.24227154203201423,
+    "learning_rate": 0.001,
+    "seconds": 305.90063187500346,
+    "evaluated_examples": 10000,
+    "trained_batches_this_invocation": 7813
+  },
+  {
+    "epoch": 4,
+    "exact_match": 0.7858,
+    "train_answer_token_loss": 0.18709256926474416,
+    "learning_rate": 0.001,
+    "seconds": 294.6897000829922,
+    "evaluated_examples": 10000,
+    "trained_batches_this_invocation": 7813
+  },
+  {
+    "epoch": 5,
+    "exact_match": 0.8266,
+    "train_answer_token_loss": 0.13996940745182032,
+    "learning_rate": 0.001,
+    "seconds": 305.7885741670034,
+    "evaluated_examples": 10000,
+    "trained_batches_this_invocation": 7813
+  },
+  {
+    "epoch": 6,
+    "exact_match": 0.8427,
+    "train_answer_token_loss": 0.10528606328317344,
+    "learning_rate": 0.001,
+    "seconds": 310.2694948330027,
+    "evaluated_examples": 10000,
+    "trained_batches_this_invocation": 7813
+  },
+  {
+    "epoch": 7,
+    "exact_match": 0.8807,
+    "train_answer_token_loss": 0.08948228173489518,
+    "learning_rate": 0.001,
+    "seconds": 285.9423872089974,
+    "evaluated_examples": 10000,
+    "trained_batches_this_invocation": 7813
+  },
+  {
+    "epoch": 8,
+    "exact_match": 0.8949,
+    "train_answer_token_loss": 0.07926961245275446,
+    "learning_rate": 0.001,
+    "seconds": 292.29348512498836,
+    "evaluated_examples": 10000,
+    "trained_batches_this_invocation": 7813
+  },
+  {
+    "epoch": 9,
+    "exact_match": 0.8949,
+    "train_answer_token_loss": 0.07096440818039032,
+    "learning_rate": 0.001,
+    "seconds": 278.2184622920031,
+    "evaluated_examples": 10000,
+    "trained_batches_this_invocation": 7813
+  },
+  {
+    "epoch": 10,
+    "exact_match": 0.9258,
+    "train_answer_token_loss": 0.06272837492275038,
+    "learning_rate": 0.001,
+    "seconds": 274.675132999997,
+    "evaluated_examples": 10000,
+    "trained_batches_this_invocation": 7813
+  },
+  {
+    "epoch": 11,
+    "exact_match": 0.9301,
+    "train_answer_token_loss": 0.05568621327741548,
+    "learning_rate": 0.001,
+    "seconds": 284.96394587500254,
+    "evaluated_examples": 10000,
+    "trained_batches_this_invocation": 7813
+  },
+  {
+    "epoch": 12,
+    "exact_match": 0.9394,
+    "train_answer_token_loss": 0.05119630771790741,
+    "learning_rate": 0.001,
+    "seconds": 282.4074268330005,
+    "evaluated_examples": 10000,
+    "trained_batches_this_invocation": 7813
+  },
+  {
+    "epoch": 13,
+    "exact_match": 0.9411,
+    "train_answer_token_loss": 0.04758882936534574,
+    "learning_rate": 0.001,
+    "seconds": 298.3190004160133,
+    "evaluated_examples": 10000,
+    "trained_batches_this_invocation": 7813
+  },
+  {
+    "epoch": 14,
+    "exact_match": 0.9314,
+    "train_answer_token_loss": 0.04432450382420423,
+    "learning_rate": 0.001,
+    "seconds": 296.9533070000034,
+    "evaluated_examples": 10000,
+    "trained_batches_this_invocation": 7813
+  },
+  {
+    "epoch": 15,
+    "exact_match": 0.9458,
+    "train_answer_token_loss": 0.04163927149123401,
+    "learning_rate": 0.001,
+    "seconds": 342.7938899169967,
+    "evaluated_examples": 10000,
+    "trained_batches_this_invocation": 7813
+  },
+  {
+    "epoch": 16,
+    "exact_match": 0.9457,
+    "train_answer_token_loss": 0.03915628372787156,
+    "learning_rate": 0.001,
+    "seconds": 469.4870527919993,
+    "evaluated_examples": 10000,
+    "trained_batches_this_invocation": 7813
+  },
+  {
+    "epoch": 17,
+    "exact_match": 0.9498,
+    "train_answer_token_loss": 0.037221958578207905,
+    "learning_rate": 0.001,
+    "seconds": 314.6412624170043,
+    "evaluated_examples": 10000,
+    "trained_batches_this_invocation": 7813
+  },
+  {
+    "epoch": 18,
+    "exact_match": 0.9479,
+    "train_answer_token_loss": 0.03558140766419386,
+    "learning_rate": 0.001,
+    "seconds": 302.3358549169934,
+    "evaluated_examples": 10000,
+    "trained_batches_this_invocation": 7813
+  },
+  {
+    "epoch": 19,
+    "exact_match": 0.9478,
+    "train_answer_token_loss": 0.03397075222175976,
+    "learning_rate": 0.001,
+    "seconds": 422.7432405830041,
+    "evaluated_examples": 10000,
+    "trained_batches_this_invocation": 7813
+  },
+  {
+    "epoch": 20,
+    "exact_match": 0.9772,
+    "train_answer_token_loss": 0.014698232172242724,
+    "learning_rate": 0.0005,
+    "seconds": 662.2840283749974,
+    "evaluated_examples": 10000,
+    "trained_batches_this_invocation": 7813
+  },
+  {
+    "epoch": 21,
+    "exact_match": 0.9736,
+    "train_answer_token_loss": null,
+    "learning_rate": 0.0005,
+    "seconds": 156.4948270419991,
+    "evaluated_examples": 10000,
+    "trained_batches_this_invocation": 0,
+    "resumed_completed_training": true,
+    "seconds_scope": "evaluation-only resume"
+  },
+  {
+    "epoch": 22,
+    "exact_match": 0.9772,
+    "train_answer_token_loss": 0.011869761494223814,
+    "learning_rate": 0.0005,
+    "seconds": 873.3737162920006,
+    "evaluated_examples": 10000,
+    "trained_batches_this_invocation": 7813,
+    "resumed_completed_training": false,
+    "seconds_scope": "full epoch"
+  },
+  {
+    "epoch": 23,
+    "exact_match": 0.9864,
+    "train_answer_token_loss": 0.0053047369858187175,
+    "learning_rate": 0.00025,
+    "seconds": 831.9879397079931,
+    "evaluated_examples": 10000,
+    "trained_batches_this_invocation": 7813,
+    "resumed_completed_training": false,
+    "seconds_scope": "full epoch"
+  },
+  {
+    "epoch": 24,
+    "completed_epoch": true,
+    "exact_match": 0.9874,
+    "train_answer_token_loss": null,
+    "learning_rate": 0.00025,
+    "seconds": 34.26934149999579,
+    "evaluated_examples": 10000,
+    "evaluation_device": "cpu",
+    "trained_batches_this_invocation": 0,
+    "resumed_completed_training": true,
+    "seconds_scope": "evaluation-only resume"
+  },
+  {
+    "epoch": 25,
+    "completed_epoch": true,
+    "exact_match": 0.987,
+    "train_answer_token_loss": 0.003898905610591196,
+    "learning_rate": 0.00025,
+    "seconds": 764.9021415830066,
+    "evaluated_examples": 10000,
+    "evaluation_device": "cpu",
+    "trained_batches_this_invocation": 7813,
+    "resumed_completed_training": false,
+    "seconds_scope": "full epoch"
+  }
+]

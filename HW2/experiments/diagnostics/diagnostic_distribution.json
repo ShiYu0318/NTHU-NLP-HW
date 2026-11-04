@@ -1,0 +1,14 @@
+{
+  "provided_eval": {
+    "total": 10000,
+    "zero_operand_examples": 52,
+    "zero_operand_fraction": 0.0052,
+    "sha256": "73426828a9f18ecd69559c4a0c9cb94e11bb68c49c18e96a9ba5b9a3c220e326"
+  },
+  "synthetic_diagnostic": {
+    "total": 10000,
+    "zero_operand_examples": 939,
+    "zero_operand_fraction": 0.0939,
+    "sha256": "a110c2de203a2b91ef5cb1d161e2f9c1e9b09ce98eba34d0a2ead4c7e727fbb7"
+  }
+}

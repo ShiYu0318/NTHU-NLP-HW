@@ -1,0 +1,13 @@
+{
+  "checkpoint_sha256": "08013cf3ed285c969a7597a24c0cd26c2a26c1b43a264e1032cfb3cd45714b1f",
+  "exact_match": 0.9258,
+  "correct": 9258,
+  "total": 10000,
+  "device": "CPU independent inference",
+  "recorded_training_em": 0.9258,
+  "answer_order": "normal",
+  "eval_sha256": "73426828a9f18ecd69559c4a0c9cb94e11bb68c49c18e96a9ba5b9a3c220e326",
+  "seconds": 15.43741504198988,
+  "full_evaluation": true,
+  "metadata_em_matches": true
+}

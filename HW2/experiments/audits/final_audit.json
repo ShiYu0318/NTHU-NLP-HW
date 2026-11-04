@@ -1,0 +1,28 @@
+{
+  "best_epoch": 24,
+  "completed_training_epochs": 25,
+  "full_eval_correct": 9874,
+  "full_eval_total": 10000,
+  "full_eval_em": 0.9874,
+  "synthetic_diagnostic_correct": 9351,
+  "synthetic_diagnostic_total": 10000,
+  "synthetic_diagnostic_em": 0.9351,
+  "stop_reason": "insufficient time for another epoch before 22:30",
+  "training_finished": "2026-11-04T22:28:29.476775+08:00",
+  "converged": false,
+  "private_score_available": false,
+  "notebook_cells": 21,
+  "code_cells": 13,
+  "markdown_cells": 8,
+  "checkpoint_parameters": 3690258,
+  "tensors_on_cpu": true,
+  "archive_members": [
+    "NLP_HW2_NCU_114502540.ipynb",
+    "checkpoint.pt",
+    "requirements.txt"
+  ],
+  "archive_sha256": "c729ab7c23f3518e177c1a7d46188e9072b22ff8c5001241607be3426cb80e93",
+  "notebook_sha256": "b4de6df164cf7d87c8d79ba437f408b3c75086bc3eb935ea944c121d18b6547b",
+  "checkpoint_sha256": "e93ec8d1d04eaf82f24b8ccf16d8d3200b03f1a491347a5ded5ea4f695ab3d6a",
+  "report_limitations": "Three-digit transfer comparison not completed; theoretical analysis and measured two-digit pilot disclosed."
+}

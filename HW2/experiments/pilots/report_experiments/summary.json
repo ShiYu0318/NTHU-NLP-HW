@@ -1,0 +1,295 @@
+{
+  "purpose": "Controlled small-capacity report pilots; not leaderboard training",
+  "started": "2026-11-04T20:37:08.795417+08:00",
+  "complete": false,
+  "runs": [
+    {
+      "name": "rnn_clean",
+      "cell_type": "RNN",
+      "train_rows": 50000,
+      "eval_rows": 1000,
+      "epochs_completed": 10,
+      "embed_dim": 64,
+      "hidden_dim": 64,
+      "batch_size": 128,
+      "seed": 2,
+      "device": "mps",
+      "parameter_count": 23122,
+      "best_exact_match": 0.065,
+      "history": [
+        {
+          "epoch": 1,
+          "exact_match": 0.004
+        },
+        {
+          "epoch": 2,
+          "exact_match": 0.016
+        },
+        {
+          "epoch": 3,
+          "exact_match": 0.015
+        },
+        {
+          "epoch": 4,
+          "exact_match": 0.029
+        },
+        {
+          "epoch": 5,
+          "exact_match": 0.046
+        },
+        {
+          "epoch": 6,
+          "exact_match": 0.03
+        },
+        {
+          "epoch": 7,
+          "exact_match": 0.048
+        },
+        {
+          "epoch": 8,
+          "exact_match": 0.048
+        },
+        {
+          "epoch": 9,
+          "exact_match": 0.055
+        },
+        {
+          "epoch": 10,
+          "exact_match": 0.065
+        }
+      ],
+      "seconds": 60.184913958000834
+    },
+    {
+      "name": "lstm_clean",
+      "cell_type": "LSTM",
+      "train_rows": 50000,
+      "eval_rows": 1000,
+      "epochs_completed": 10,
+      "embed_dim": 64,
+      "hidden_dim": 64,
+      "batch_size": 128,
+      "seed": 2,
+      "device": "mps",
+      "parameter_count": 73042,
+      "best_exact_match": 0.09,
+      "history": [
+        {
+          "epoch": 1,
+          "exact_match": 0.006
+        },
+        {
+          "epoch": 2,
+          "exact_match": 0.012
+        },
+        {
+          "epoch": 3,
+          "exact_match": 0.018
+        },
+        {
+          "epoch": 4,
+          "exact_match": 0.024
+        },
+        {
+          "epoch": 5,
+          "exact_match": 0.038
+        },
+        {
+          "epoch": 6,
+          "exact_match": 0.041
+        },
+        {
+          "epoch": 7,
+          "exact_match": 0.067
+        },
+        {
+          "epoch": 8,
+          "exact_match": 0.077
+        },
+        {
+          "epoch": 9,
+          "exact_match": 0.09
+        },
+        {
+          "epoch": 10,
+          "exact_match": 0.088
+        }
+      ],
+      "seconds": 85.99028616600845
+    },
+    {
+      "name": "gru_clean",
+      "cell_type": "GRU",
+      "train_rows": 50000,
+      "eval_rows": 1000,
+      "epochs_completed": 10,
+      "embed_dim": 64,
+      "hidden_dim": 64,
+      "batch_size": 128,
+      "seed": 2,
+      "device": "mps",
+      "parameter_count": 56402,
+      "best_exact_match": 0.106,
+      "history": [
+        {
+          "epoch": 1,
+          "exact_match": 0.005
+        },
+        {
+          "epoch": 2,
+          "exact_match": 0.026
+        },
+        {
+          "epoch": 3,
+          "exact_match": 0.023
+        },
+        {
+          "epoch": 4,
+          "exact_match": 0.051
+        },
+        {
+          "epoch": 5,
+          "exact_match": 0.059
+        },
+        {
+          "epoch": 6,
+          "exact_match": 0.076
+        },
+        {
+          "epoch": 7,
+          "exact_match": 0.085
+        },
+        {
+          "epoch": 8,
+          "exact_match": 0.101
+        },
+        {
+          "epoch": 9,
+          "exact_match": 0.102
+        },
+        {
+          "epoch": 10,
+          "exact_match": 0.106
+        }
+      ],
+      "seconds": 106.6831733329891
+    },
+    {
+      "name": "lstm_noise20",
+      "cell_type": "LSTM",
+      "train_rows": 50000,
+      "eval_rows": 1000,
+      "epochs_completed": 10,
+      "embed_dim": 64,
+      "hidden_dim": 64,
+      "batch_size": 128,
+      "seed": 2,
+      "device": "mps",
+      "parameter_count": 73042,
+      "best_exact_match": 0.078,
+      "history": [
+        {
+          "epoch": 1,
+          "exact_match": 0.007
+        },
+        {
+          "epoch": 2,
+          "exact_match": 0.014
+        },
+        {
+          "epoch": 3,
+          "exact_match": 0.02
+        },
+        {
+          "epoch": 4,
+          "exact_match": 0.038
+        },
+        {
+          "epoch": 5,
+          "exact_match": 0.049
+        },
+        {
+          "epoch": 6,
+          "exact_match": 0.041
+        },
+        {
+          "epoch": 7,
+          "exact_match": 0.065
+        },
+        {
+          "epoch": 8,
+          "exact_match": 0.072
+        },
+        {
+          "epoch": 9,
+          "exact_match": 0.064
+        },
+        {
+          "epoch": 10,
+          "exact_match": 0.078
+        }
+      ],
+      "seconds": 135.98016204200394
+    },
+    {
+      "name": "lstm_train2_test2",
+      "cell_type": "LSTM",
+      "train_rows": 50000,
+      "eval_rows": 1000,
+      "epochs_completed": 10,
+      "embed_dim": 64,
+      "hidden_dim": 64,
+      "batch_size": 128,
+      "seed": 2,
+      "device": "mps",
+      "parameter_count": 73042,
+      "best_exact_match": 0.027,
+      "history": [
+        {
+          "epoch": 1,
+          "exact_match": 0.001
+        },
+        {
+          "epoch": 2,
+          "exact_match": 0.004
+        },
+        {
+          "epoch": 3,
+          "exact_match": 0.005
+        },
+        {
+          "epoch": 4,
+          "exact_match": 0.009
+        },
+        {
+          "epoch": 5,
+          "exact_match": 0.01
+        },
+        {
+          "epoch": 6,
+          "exact_match": 0.015
+        },
+        {
+          "epoch": 7,
+          "exact_match": 0.015
+        },
+        {
+          "epoch": 8,
+          "exact_match": 0.022
+        },
+        {
+          "epoch": 9,
+          "exact_match": 0.027
+        },
+        {
+          "epoch": 10,
+          "exact_match": 0.027
+        }
+      ],
+      "seconds": 166.10552437500155
+    }
+  ],
+  "noise_rows": 10000,
+  "finished": "2026-11-04T20:46:36.044080+08:00",
+  "stop_reason": "Paused to prioritize primary-model GPU throughput; unfinished digit-shift fit excluded."
+}

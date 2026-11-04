@@ -1,0 +1,74 @@
+rnn_clean: epoch=1, full pilot EM=0.0000
+lstm_clean: epoch=1, full pilot EM=0.0000
+gru_clean: epoch=1, full pilot EM=0.0000
+{
+  "purpose": "GPU API smoke only",
+  "started": "2026-11-04T20:15:40.554770+08:00",
+  "complete": true,
+  "runs": [
+    {
+      "name": "rnn_clean",
+      "cell_type": "RNN",
+      "train_rows": 128,
+      "eval_rows": 4,
+      "epochs_completed": 1,
+      "embed_dim": 16,
+      "hidden_dim": 24,
+      "batch_size": 128,
+      "seed": 2,
+      "device": "mps",
+      "parameter_count": 3546,
+      "best_exact_match": 0.0,
+      "history": [
+        {
+          "epoch": 1,
+          "exact_match": 0.0
+        }
+      ],
+      "seconds": 1.429676624989952
+    },
+    {
+      "name": "lstm_clean",
+      "cell_type": "LSTM",
+      "train_rows": 128,
+      "eval_rows": 4,
+      "epochs_completed": 1,
+      "embed_dim": 16,
+      "hidden_dim": 24,
+      "batch_size": 128,
+      "seed": 2,
+      "device": "mps",
+      "parameter_count": 10170,
+      "best_exact_match": 0.0,
+      "history": [
+        {
+          "epoch": 1,
+          "exact_match": 0.0
+        }
+      ],
+      "seconds": 0.4736115419946145
+    },
+    {
+      "name": "gru_clean",
+      "cell_type": "GRU",
+      "train_rows": 128,
+      "eval_rows": 4,
+      "epochs_completed": 1,
+      "embed_dim": 16,
+      "hidden_dim": 24,
+      "batch_size": 128,
+      "seed": 2,
+      "device": "mps",
+      "parameter_count": 7962,
+      "best_exact_match": 0.0,
+      "history": [
+        {
+          "epoch": 1,
+          "exact_match": 0.0
+        }
+      ],
+      "seconds": 0.16747020799084567
+    }
+  ],
+  "finished": "2026-11-04T20:15:43.206498+08:00"
+}
