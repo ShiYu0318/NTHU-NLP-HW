@@ -49,10 +49,14 @@ def prepare(root):
 
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--study-dir',required=True,type=Path)
-    parser.add_argument('--prepare-only',action='store_true');args=parser.parse_args()
+    parser.add_argument('--prepare-only',action='store_true')
+    parser.add_argument('--resume',action='store_true',help='Explicitly clear study/model STOP markers')
+    args=parser.parse_args()
     root=args.study_dir.resolve();prepare(root)
     if args.prepare_only:return
     lock=(root/'.pipeline.lock').open('w');fcntl.flock(lock,fcntl.LOCK_EX|fcntl.LOCK_NB)
+    if args.resume:
+        for marker in [root/'STOP',root/'gru/STOP',root/'lstm/STOP']:marker.unlink(missing_ok=True)
     def state(phase,**more):atomic_json(root/'pipeline.json',dict(pid=os.getpid(),phase=phase,**more))
     def request_stop(signum,frame):(root/'STOP').touch()
     signal.signal(signal.SIGTERM,request_stop);signal.signal(signal.SIGINT,request_stop)

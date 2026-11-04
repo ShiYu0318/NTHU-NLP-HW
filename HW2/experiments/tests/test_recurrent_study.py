@@ -1,4 +1,6 @@
 import copy
+import hashlib
+import tempfile
 import io
 import json
 from pathlib import Path
@@ -42,6 +44,37 @@ class RecurrentStudyTests(unittest.TestCase):
                 tokens.append(token)
         expected=[reverse[i] for i in tokens]
         self.assertEqual(model.generator(prompt,max_len=limit),expected)
+
+    def test_comparison_counts_aligned_model_errors(self):
+        import pandas as pd
+        self.helper()
+        import analyze_recurrent_study as analysis
+        self.assertTrue(hasattr(analysis,'paired_predictions'),'Paired prediction comparison is missing')
+        a=pd.DataFrame(dict(src=['a','b','c','d'],target=['1','2','3','4'],correct=[1,1,0,1]))
+        b=a.copy();b['correct']=[1,0,1,0]
+        result=analysis.paired_predictions(a,b)
+        self.assertEqual(result['gru_only_correct'],2)
+        self.assertEqual(result['lstm_only_correct'],1)
+        self.assertEqual(result['both_correct'],1)
+        self.assertEqual(result['both_wrong'],0)
+        self.assertAlmostEqual(result['delta_percentage_points'],25.)
+        with self.assertRaises(ValueError):analysis.paired_predictions(a,b.iloc[::-1])
+
+    def test_publication_waits_for_verified_convergence_and_finding(self):
+        self.helper()
+        self.assertTrue((SCRIPTS/'publish_recurrent_study.py').exists(),'Conditional publication helper is missing')
+        import publish_recurrent_study as publishing
+        with tempfile.TemporaryDirectory() as temp:
+            hw=Path(temp)/'HW2';root=hw/'experiments/runs/study';root.mkdir(parents=True)
+            (hw/'submission.txt').write_text('unchanged')
+            (root/'frozen_submission.json').write_text(json.dumps({'submission.txt':hashlib.sha256(b'unchanged').hexdigest()}))
+            (root/'comparison.json').write_text(json.dumps({'useful_finding':False}))
+            self.assertFalse(publishing.publication_plan(root)['publishable'])
+            (root/'comparison.json').write_text(json.dumps({'useful_finding':True}))
+            for role in ['gru','lstm']:
+                (root/role).mkdir();(root/role/'verification.json').write_text(json.dumps({'converged':False}))
+            self.assertFalse(publishing.publication_plan(root)['publishable'])
+            self.assertFalse((root/'publication.json').exists())
 
     def test_adam_resume_preserves_next_parameter_update(self):
         model,c=self.model('GRU');model2=copy.deepcopy(model)
