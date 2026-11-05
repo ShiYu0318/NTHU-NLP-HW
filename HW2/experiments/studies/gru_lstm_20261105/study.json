@@ -1,0 +1,19 @@
+{
+  "seed": 2,
+  "matched": "dimensions, data, optimizer, scheduling, decoder, convergence",
+  "embedding": 128,
+  "hidden": 512,
+  "batch_size": 128,
+  "deadline": null,
+  "target_em": null,
+  "models": [
+    "GRU",
+    "LSTM"
+  ],
+  "lstm_start_epoch": 29,
+  "lstm_start_batch": 830,
+  "lstm_source_resume_sha256": "509c630308e1f3db35eb50e3b1b096ff6b8652d334dac5323b5add2f73a0377b",
+  "original_lstm_untouched": true,
+  "publish_draft_if_useful": true,
+  "lstm_initialization": "resume"
+}

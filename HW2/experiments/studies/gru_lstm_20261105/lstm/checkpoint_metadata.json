@@ -1,0 +1,51 @@
+{
+  "config": {
+    "cell_type": "LSTM",
+    "embed_dim": 128,
+    "hidden_dim": 512,
+    "vocab_size": 18,
+    "batch_size": 128,
+    "seed": 2,
+    "optimizer": "Adam",
+    "grad_clip": 1,
+    "char_to_id": {
+      "<pad>": 0,
+      "<eos>": 1,
+      "(": 2,
+      ")": 3,
+      "*": 4,
+      "+": 5,
+      "-": 6,
+      "0": 7,
+      "1": 8,
+      "2": 9,
+      "3": 10,
+      "4": 11,
+      "5": 12,
+      "6": 13,
+      "7": 14,
+      "8": 15,
+      "9": 16,
+      "=": 17
+    },
+    "answer_order": "normal"
+  },
+  "epoch": 32,
+  "exact_match": 0.9925,
+  "checkpoint_sha256": "3901bd06b4563354be3b8f06d9467d71d829832892eb0cdd95fe32a3dd50a3b6",
+  "data_storage": "uint8 matrices; cast to torch.long per batch",
+  "evaluated_examples": 10000,
+  "evaluation": "Full CPU greedy generation with a copied model; GPU training, no teacher forcing at evaluation",
+  "python": "3.13.15",
+  "pytorch": "2.15.0",
+  "training_progress": {
+    "epoch": 32,
+    "completed_epoch": true,
+    "completed_batches": 7813,
+    "total_batches": 7813
+  },
+  "gpu": "Apple GPU (MPS)",
+  "device_type": "mps",
+  "system": "macOS-26.7.2-arm64-arm-64bit-Mach-O",
+  "timestamp": "2026-11-05T08:11:21.113861+08:00"
+}
