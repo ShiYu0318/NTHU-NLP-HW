@@ -1,0 +1,98 @@
+{
+  "cell_type": "GRU",
+  "started": "2026-11-05T01:58:42.168336+08:00",
+  "invocation_seconds": 20392.543246541987,
+  "stop_reason": "operational convergence after low-learning-rate refinement",
+  "converged": true,
+  "finished": "2026-11-05T07:38:34.816179+08:00",
+  "submission_unchanged": true,
+  "evaluation": {
+    "correct": 9618,
+    "total": 10000,
+    "exact_match": 0.9618,
+    "seconds": 9.261857832985697,
+    "groups": {
+      "answer_length_2": {
+        "correct": 3377,
+        "total": 3398
+      },
+      "addition_subtraction": {
+        "correct": 4171,
+        "total": 4178
+      },
+      "no_parentheses": {
+        "correct": 3982,
+        "total": 4294
+      },
+      "answer_length_3": {
+        "correct": 3748,
+        "total": 3807
+      },
+      "answer_length_5": {
+        "correct": 222,
+        "total": 366
+      },
+      "multiplication": {
+        "correct": 5447,
+        "total": 5822
+      },
+      "parentheses": {
+        "correct": 5636,
+        "total": 5706
+      },
+      "answer_length_4": {
+        "correct": 1806,
+        "total": 1956
+      },
+      "answer_length_1": {
+        "correct": 465,
+        "total": 473
+      }
+    }
+  },
+  "diagnostic": {
+    "correct": 8867,
+    "total": 10000,
+    "exact_match": 0.8867,
+    "seconds": 9.835451582999667,
+    "groups": {
+      "answer_length_3": {
+        "correct": 3351,
+        "total": 3672
+      },
+      "multiplication": {
+        "correct": 5009,
+        "total": 6088
+      },
+      "parentheses": {
+        "correct": 5109,
+        "total": 5682
+      },
+      "answer_length_4": {
+        "correct": 1669,
+        "total": 2163
+      },
+      "no_parentheses": {
+        "correct": 3758,
+        "total": 4318
+      },
+      "answer_length_5": {
+        "correct": 261,
+        "total": 490
+      },
+      "answer_length_2": {
+        "correct": 3039,
+        "total": 3120
+      },
+      "addition_subtraction": {
+        "correct": 3858,
+        "total": 3912
+      },
+      "answer_length_1": {
+        "correct": 547,
+        "total": 555
+      }
+    }
+  },
+  "checkpoint_sha256": "d77743974f03b6dedf95839116d365bebcb94dd0c74d70d41826cb3252981d55"
+}
